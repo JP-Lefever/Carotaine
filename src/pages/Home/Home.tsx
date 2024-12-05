@@ -39,9 +39,9 @@ function Home() {
       <div>
         <AutoPlay data={data} />
       </div>
-      <a href="/conseil" target="_blank" rel="noreferrer">
+      <Link to="/conseil" target="_blank" rel="noreferrer">
         <img className={style.hide} src={CarrotBoy} alt="Original Carrot" />
-      </a>
+      </Link>
     </div>
   );
 }
