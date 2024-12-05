@@ -1,4 +1,4 @@
-import { Link, useLoaderData } from "react-router-dom";
+import { Link, NavLink, useLoaderData } from "react-router-dom";
 import style from "./Home.module.css";
 import heroBanner from "../../assets/heroBanner.jpg";
 
@@ -13,7 +13,7 @@ function Home() {
       <div className={style.HeroBanner}>
         <img src={heroBanner} alt="Carrot Field Hero Banner" />
         <div className={style.BannerText}>
-          <h1>KAROTAINE</h1>
+          <h1>CAROTAINE</h1>
           <h2>Spread kindness</h2>
         </div>
       </div>
@@ -39,9 +39,9 @@ function Home() {
       <div>
         <AutoPlay data={data} />
       </div>
-      <Link to="/conseil" target="_blank" rel="noreferrer">
+      <NavLink to="/conseil">
         <img className={style.hide} src={CarrotBoy} alt="Original Carrot" />
-      </Link>
+      </NavLink>
     </div>
   );
 }
